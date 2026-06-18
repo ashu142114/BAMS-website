@@ -1,0 +1,5 @@
+import { featurePages, industries, navItems } from "@/data/site";
+
+export function SiteFooter() {
+  return <footer className="border-t border-slate-100 bg-white px-6 py-14"><div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]"><div><div className="flex items-center gap-2 text-xl font-black"><span className="grid h-10 w-10 place-items-center rounded-full bg-ink text-white">B</span>BAMS</div><p className="mt-4 max-w-sm text-muted">AI Powered Company Operating System for modern operating teams.</p></div><div><h4 className="font-black">Company</h4><div className="mt-4 grid gap-2 text-sm text-muted">{navItems.map(i=><a href={i.href} key={i.href}>{i.label}</a>)}<a href="/about">About</a></div></div><div><h4 className="font-black">Features</h4><div className="mt-4 grid gap-2 text-sm text-muted">{featurePages.slice(0,6).map(([n,s])=><a href={`/features/${s}`} key={s}>{n}</a>)}</div></div><div><h4 className="font-black">Industries</h4><div className="mt-4 grid gap-2 text-sm text-muted">{industries.slice(0,6).map(([n,s])=><a href={`/industries/${s}`} key={s}>{n}</a>)}</div></div></div></footer>;
+}
