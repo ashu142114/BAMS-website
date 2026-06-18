@@ -1,16 +1,17 @@
 import { ScrollOrb } from "@/components/Motion";
 import { Hero } from "@/components/sections/Hero";
 import {
+  AiOperatingSystemSection,
   ExecutiveSection,
   FaqSection,
   FinalCta,
   IndustrySection,
   IntegrationsSection,
-  ModulesSection,
-  OperatingSystemSection,
+  OutcomesSection,
+  PlatformSection,
   PricingSection,
   ProblemSection,
-  TestimonialsSection,
+  ProductEcosystemSection,
   TrustSection
 } from "@/components/sections/Sections";
 
@@ -22,19 +23,20 @@ export default function Home() {
         <div className="flex items-center justify-between">
           <a className="flex items-center gap-2 font-black" href="#"><span className="grid h-9 w-9 place-items-center rounded-full bg-ink text-white">B</span>BAMS</a>
           <div className="hidden gap-7 text-sm font-semibold text-slate-600 md:flex"><a href="#platform">Platform</a><a href="#modules">Modules</a><a href="#pricing">Pricing</a></div>
-          <a className="rounded-full bg-ink px-5 py-2 text-sm font-bold text-white shadow-card" href="#demo">Book Demo</a>
+          <div className="flex items-center gap-2"><a className="hidden rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-ink shadow-card sm:inline-flex" href="#tour">Product Tour</a><a className="rounded-full bg-ink px-5 py-2 text-sm font-bold text-white shadow-card" href="#demo">Book Demo</a></div>
         </div>
       </nav>
       <Hero />
       <TrustSection />
       <ProblemSection />
-      <OperatingSystemSection />
-      <ModulesSection />
+      <PlatformSection />
+      <AiOperatingSystemSection />
+      <ProductEcosystemSection />
       <ExecutiveSection />
       <IndustrySection />
       <IntegrationsSection />
+      <OutcomesSection />
       <PricingSection />
-      <TestimonialsSection />
       <FaqSection />
       <FinalCta />
     </main>
